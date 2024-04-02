@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+.month-container {
+    background-image: url('/cource/baki2.png');
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.month-container h1 {
+    color: #192CD1;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: 'Tektur', sans-serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: block;
+
+    margin-bottom: -100px;
+    margin-left: 80px;
+}
+
+.month-container h3 {
+    color: #192CD1;
+    font-family: 'Tektur', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    margin-top:  80px;
+    margin-left: 80px;
+}
+
+.month {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.small-circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.small-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #4759ff;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+.month-card1, .month-card2, .month-card3,  .month-card4 {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "Tektur";
+}
+
+.month-card1 h2, .month-card2 h2, .month-card3 h2, .month-card4 h2 {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.month-card1, a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #192CD1;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.month-card1:hover {
+    transform: scale(1.1);
+    background-color: #19BBD1;
+}
+
+.month-card1:hover .small-circle {
+    transform: scale(1.1);
+    background-color: #19BBD1;
+}
+
+.month-card2 {
+    cursor: pointer;
+    background-color: #192CD1;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.month-card2:hover {
+    transform: scale(1.1);
+    background-color: #D11987; 
+}
+
+.month-card2:hover .small-circle {
+    background-color: #D11987;
+}
+
+.month-card3 {
+    cursor: pointer;
+    background-color: #192CD1;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.month-card3:hover {
+    transform: scale(1.1);
+    background-color: #75D119; 
+}
+
+.month-card3:hover .small-circle {
+    transform: scale(1.1);
+    background-color: #75D119;
+}
+
+.month-card4 {
+    cursor: pointer;
+    background-color: #192CD1;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.month-card4:hover {
+    transform: scale(1.1);
+    background-color: #D15019; 
+}
+
+.month-card4:hover .small-circle {
+    transform: scale(1.1);
+    background-color: #D15019;
+}
+
+.month-card-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 170px;
+    height: 80px; 
+}
+
+/* Секция с Вступлением */
+
+.intro {
+    background: #192CD1;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.intro-container h1 {
+    position: absolute;
+    margin: 0;
+    font-family: "Tektur";
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 900px;
+    margin-left: 80px;
+    margin-top: 150px;
+}
+
+.intro-container h2 {
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-family: "Tektur";
+    margin-bottom: 150px;
+    margin-right: 80px;
+    max-width: 700px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Секция с Месяцами */
+
+.yanuary {
+    background-image: url('/cource/BackTwo.png');
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.yanuary2 {
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.yanuary-container h1 {
+    position: absolute;
+    margin: 0;
+    color: #192CD1;
+    font-family: "Tektur";
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 900px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.Yanuary-container {
+    position: absolute;
+    text-align: center;
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 170px;
+    color: #000;
+    font-family: "Tektur";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 1500px;
+    margin-left: 170px;
+}
+
+.day-circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1500px;
+    margin-left: 170px;
+}
+
+.week-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.day-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    fill: rgba(25, 44, 209, 0.00);
+    stroke-width: 9px;
+    border: 6px solid #192CD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    
+}
+
+.day-circle:not(.empty) {
+    background-color: transparent;
+    color: #000;
+    font-family: "Tektur";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.day-circle:hover::before {
+    content: attr(data-tooltip); /* Отображение содержимого атрибута data-tooltip */
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #192CD1;
+    font-size: 20px;
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: -65px; /* Положение относительно кружка */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.1s ease-in-out, visibility 1s ease-in-out; /* Плавное появление */
+}
+
+.day-circle:hover::before {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.day-circle:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
